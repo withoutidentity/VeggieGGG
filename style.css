@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
+
+        /*titie and background*/    
+        body{
+            font-family: 'League Spartan', sans-serif;
+        }
+        h1 {
+            font-size: 1.5cm;
+            background-position: 50px;
+            padding-top: 0px;
+            margin-top: -0.5px;
+            display: flex;
+            align-items: center;
+            font-family: 'League Spartan', sans-serif;
+        }
+        /*ธง*/
+        .flag {
+            position: relative;
+            align-items: center;
+            bottom: 102px;
+            left: 1250px;
+        }
+        /*หัวข้อรอง*/
+        .header-title {
+            font-size: 1cm;
+            position: relative;
+            left: 300px;
+            align-items: center;
+            text-align: left;
+            font-family: 'League Spartan', sans-serif;
+            text-shadow: 2px 3px 3px #757373;
+        }
+        /*เนื้อหา GGG*/
+        .content {
+            text-align: left;
+            position: relative;
+            bottom: 100px;
+            left: 90px;
+            font-family: 'Kaisei Tokumin', serif;
+            font-size: large;
+        }
+        .paragraph1 {
+            text-align: left;
+            position: relative;
+            bottom: 370px;
+            left: 90px;
+            font-family: 'Noto Sans Thai', sans-serif;
+            font-size: x-large; 
+        }
+        .paragraph2 {
+            text-align: left;
+            position: relative;
+            bottom: 410px;
+            left: 90px;
+            font-family: 'Noto Sans Thai', sans-serif;
+            font-size: x-large; 
+        }
+        .paragraph3 {
+            text-align: left;
+            position: relative;
+            bottom: 370px;
+            left: 90px;
+            font-family: 'Noto Sans Thai', sans-serif;
+            font-size: x-large; 
+        }
+        /*อิหยังนิ*/
+        .header-btn{
+            background-position: right bottom;
+            text-align: right;
+            width: 160px;
+            background: #FFF9E8;
+            height: 20px;
+            border-radius: 1px;
+            display: flex;
+            align-items: right;
+            justify-content: center;
+            padding: 10px;
+            font-family: 'Kaisei Tokumin', serif;
+        }
+        /*ผักเลื่อน*/
+        .slide {
+            width: 200px;
+            height: 250px;
+            margin-left: auto;
+            margin-right: 275px;
+            margin-top: -900px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .slide figure img {
+            width: 200px;
+            height: 150;
+            float: left;
+        }
+        .slide figure {
+            position: relative;
+            width: 500%;
+            margin: 0px;
+            left: 0px;
+            animation: vegetable 20s infinite linear;
+        }
+        @keyframes vegetable {
+            0%{left: 0%;}
+            15%{left: 0%;}
+            20%{left: -100%;}
+            35%{left: -100%;}
+            40%{left: -200%;}
+            60%{left: -200%;}
+            65%{left: -300%;}
+            80%{left: -300%;}
+            85%{left: -400%;}
+            100%{left: -400%;}
+        }
+        /*คุณคิดหยังอยู่*/
+        .text {
+            position: relative;
+            bottom: -20px;
+            left: 880px;
+            font-size: x-large;
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+        /*ภายในกล่องข้อความ*/
+        .input-search {
+            position: relative;
+            bottom: 0px;
+            left: 855px;
+            justify-content: center;
+            display: flex;
+            color: #FFF9E8;
+            align-items: center;
+            height: 50px; /*ความสูงกล่อง*/
+            border-radius: 25px; /*ความโค้ง*/
+            width: fit-content; /*ความยาวขึ้นอยู่กับอินพุต*/
+            overflow: hidden;   
+        }
+        input {
+            height: 100%;
+            width: 300px; /*ความยาวกล่อง*/
+            outline: none;
+            border: 0px;
+            font-size: 20px; /*การป้อน*/
+            padding : 25px;
+        }
+        /*ปุ่มกด Search*/
+        .btn-1 {
+           bottom: 65px;
+           height: 40px;
+           left: 1200px;
+           width: 80px;
+           padding: 10px;
+           justify-content: center;
+           font-size: large;
+           color: #000000;
+           overflow: hidden;
+           padding-right: 10px;
+           border-radius: 30px;
+           box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+           0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-1:hover {
+            transform: translate(0, -6px);
+            box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.747),
+            -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-1:hover::after {
+            transform: rotate(150deg);
+        }
+        .btn-1::after {
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            background-color: burlywood;
+            background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+            z-index: -1;
+            transition: all 0.20s ease;
+        }
+        /*VeggieGGG*/
+        .header-title {
+            right: 0px;
+            position: relative;
+            align-items: center;
+            text-align: left;
+            bottom: 100px;
+
+        }
+        /*หน้าเนื้อหา*/
+        .h3 {
+            position: relative;
+            bottom: 50px;
+            left: 80px;
+            justify-content: center;
+            display: flex;
+            color: #FFF9E8;
+            align-items: center;
+            background-color: #FFF9E8;
+            height: 50px; /*ความสูงกล่อง*/
+            border-radius: 0px; /*ความโค้ง*/
+            width: fit-content; /*ความยาวขึ้นอยู่กับอินพุต*/
+            overflow: hidden;
+            margin-right: 25px;
+        }
+        
+        /*ประโยชน์และวิธีการปลูก*/
+        .p {
+            position: relative;
+            bottom: -100px;
+            left: 90px;
+            font-size: large;
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+        /*รูปผลไม้*/
+        .img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .output-box {
+            position: relative;
+            bottom: 50px;
+            left: 80px;
+            justify-content: center;
+            display: flex;
+            color: #FFF9E8;
+            align-items: center;
+            background-color: #FFF9E8;
+            height: 50px; /*ความสูงกล่อง*/
+            border-radius: 0px; /*ความโค้ง*/
+            width: fit-content; /*ความยาวขึ้นอยู่กับอินพุต*/
+            overflow: hidden;
+            margin-right: 25px;
+        }
+        /*ปุ่มกดย้อนกลับ*/
+        .btn-2 {
+            top: 100px;
+            bottom: -170px;
+            left: 1198px;
+            height: 40px;
+            width: 100px;
+            padding: 8px;
+            justify-content: center;
+            font-size: large;
+            color: #000000;
+            overflow: hidden;
+            font-family: 'Noto Sans Thai', sans-serif;
+            padding-right: 10px;
+            border-radius: 30px;
+            box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+            0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-2:hover {
+            transform: translate(0, -6px);
+            box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.747),
+            -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-2:hover::after {
+            transform: rotate(150deg);
+        }
+        .btn-2::after {
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            background-color: burlywood;
+            background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+            z-index: -1;
+            transition: all 0.20s ease;
+        }
+        /*ปุ่มกดติดต่อเรา*/
+        .btn-3 {
+            bottom: 280px;
+            left: 1050px;
+            height: 40px;
+            width: 100px;
+            padding: 8px;
+            justify-content: center;
+            font-size: large;
+            color: #000000;
+            overflow: hidden;
+            font-family: 'Noto Sans Thai', sans-serif;
+            padding-right: 10px;
+            border-radius: 30px;
+            box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+            0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-3:hover {
+            transform: translate(0, -6px);
+            box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.747),
+            -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-3:hover::after {
+            transform: rotate(150deg);
+        }
+        .btn-3::after {
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            background-color: burlywood;
+            background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+            z-index: -1;
+            transition: all 0.20s ease;
+        }
+        /*แจ้งเราที่นี่*/
+        .contact {
+            position: relative;
+            bottom: 50px;
+            left: -350px;
+            font-size: x-large;
+            font-family: 'Noto Sans Thai', sans-serif;
+            text-align: center;
+        }
+        /*ภายในกล่องคอนแทค*/
+        .input-text {
+            position: relative;
+            bottom: 230px;
+            left: 130px;
+            justify-content: center;
+            display: flex;
+            color: #FFF9E8;
+            align-items: center;
+            height: 50px; /*ความสูงกล่อง*/
+            border-radius: 25px ;
+            width: fit-content;
+            overflow: hidden;
+            padding-right: 25px; /*กากบาท*/
+            padding: 0px;
+            border: none;   
+            outline: none;
+
+        }
+        /*ปุ่มส่งข้อความ*/
+        .btn-4 {
+            bottom: 297px;
+            left: 480px;
+            height: 40px;
+            width: 80px;
+            padding: 10px;
+            justify-content: center;
+            font-size: large;
+            color: #000000;
+            overflow: hidden;
+            padding-right: 10px;
+            border-radius: 30px;
+            box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+            0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-4:hover {
+            transform: translate(0, -6px);
+            box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.747),
+            -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-4:hover::after {
+            transform: rotate(150deg);
+        }
+        .btn-4::after {
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            background-color: burlywood;
+            background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+            z-index: -1;
+            transition: all 0.20s ease;
+        }
+        .wolrd-1 {
+            position: relative;
+            align-items: center;
+            bottom: 275px;
+            left: 150px;
+        }
+        .wolrd-2 {
+            position: relative;
+            align-items: center;
+            bottom: 310px;
+            left: 480px;
+        }
+        .social-1 {
+            position: relative;
+            align-items: center;
+            bottom: 280px;
+            left: 230px;
+        }
+        .social-2 {
+            position: relative;
+            align-items: center;
+            bottom: 370px;
+            left: 330px;
+        }
+        /*ปุ่มย้อนกลับหน้าคอนแทค*/
+        .btn-5 {
+            bottom: -20px;
+            left: 20px;
+            height: 40px;
+            width: 100px;
+            padding: 10px;
+            justify-content: center;
+            font-size: large;
+            font-family: 'Noto Sans Thai', sans-serif;
+            color: #000000;
+            overflow: hidden;
+            padding-right: 10px;
+            border-radius: 30px;
+            box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+            0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-5:hover {
+            transform: translate(0, -6px);
+            box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.747),
+            -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+        }
+        .btn-5:hover::after {
+            transform: rotate(150deg);
+        }
+        .btn-5::after {
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            background-color: burlywood;
+            background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+            z-index: -1;
+            transition: all 0.20s ease;
+        }
+
+        form{
+            margin: 25px 0;
+        }
+        form button{
+            height: 100px;
+            left: 1344px;
+            position: absolute;
+            top: 474px;
+            width: 107px;
+            background: none;
+            border: none;
+        }
+        
+        
+        
+        

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+h1 {
+    font-size: 1.5cm;
+    background-position: 50px;
+    padding-top: 0px;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+}
+/*ธง*/
+.flag {
+    position: relative;
+    align-items: center;
+    bottom: 102px;
+    left: 1250px;
+}
+.btn-2 {
+    bottom: 120px;
+    left: 1195px;
+    height: 40px;
+    width: 100px;
+    padding: 8px;
+    justify-content: center;
+    font-size: large;
+    color: #000000;
+    overflow: hidden;
+    font-family: 'Noto Sans Thai', sans-serif;
+    padding-right: 10px;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+    0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+}
+.btn-2:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.656),
+    -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+}
+.btn-2:hover::after {
+    transform: rotate(150deg);
+}
+.btn-2::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: burlywood;
+    background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+    z-index: -1;
+    transition: all 0.20s ease;
+}
+/*ปุ่มกดติดต่อเรา*/
+.btn-3 {
+    bottom: 630px;
+    left: 1050px;
+    height: 40px;
+    width: 100px;
+    padding: 8px;
+    justify-content: center;
+    font-size: large;
+    color: #000000;
+    overflow: hidden;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 70px;
+    padding-right: 10px;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(99, 240, 186, 0.747),
+    0px 0px 0px 0px rgba(246, 248, 121, 0.842);
+}
+.btn-3:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(99, 240, 186, 0.747),
+    -10px 10px 25px 0px rgba(246, 248, 121, 0.842);
+}
+.btn-3:hover::after {
+    transform: rotate(150deg);
+}
+.btn-3::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: burlywood;
+    background-image: linear-gradient(225deg, #fa6226 0%, #ffbe30 50%, #25d05e 100%);
+    z-index: -1;
+    transition: all 0.20s ease;
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.h3 {
+    position: relative;
+    bottom: 50px;
+    left: 90px;
+    font-size: large;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.h4 {
+    position: relative;
+    bottom: 50px;
+    left: 90px;
+    font-size: large;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.p {
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+    justify-content: center;
+    display: flex;
+    color: #FFF9E8;
+    align-items: center;
+    background-color: #FFF9E8;
+    height: 50px; /*ความสูงกล่อง*/
+    border-radius: 0px; /*ความโค้ง*/
+    width: fit-content; /*ความยาวขึ้นอยู่กับอินพุต*/
+    overflow: hidden;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-right: 25px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTE-8">
+    <meta name="viewpiont" content="width=device-width, initial-scale=1.0">
+    <title>VeggieGGG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body background="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.15752-9/384816908_1182405199387214_713105068753829147_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeH_lSJ6WvJDd4qKiGVd4a5Ebis6MFOYLUNuKzowU5gtQy-RCvXOdpjWfrkvBUHLSNHFmyuNdjH_873QMpqM9Cfk&_nc_ohc=MNsM0YiQzxgAX8ncq2f&_nc_ht=scontent.fbkk5-7.fna&oh=03_AdQkyH5EMl7vKrjvxmhvLZ4Imnut5CWvMTaeHI-F4mnjHw&oe=656ECFBE">
+    <h1 style="background-color: rgba(255, 245, 224, 0.907);" width="80">&nbsp;
+        <img src="img/Group.svg" width="80" height="80">&nbsp; 
+        <span style="color: black;">Veggie<span style="color: rgb(7, 111, 7);"> G<span style="color: rgb(224, 108, 0);">G<span style="color: rgb(255, 166, 2);">G
+        </span></span></span></span>
+    </h1>
+    <div class="flag">
+        <img src="img/flag-for-thailand 1.svg">
+    </div>
+    <div class="contact">
+        <h4 style="color: black;">หากคุณต้องการเพิ่มชนิดผัก แจ้งเราได้ที่นี่</h4><br><br>
+        <h4 style="color: black;">ติดต่อสอบถามเพิ่มเติมได้ที่</h4>
+    </div>
+    <form name="submit-to-google-sheet">
+        <div class="input-text">
+            <input name="name" type="text" placeholder="Please send us a message...">
+            <span id="msg"></span>
+            <button type="submit" class="btn-4">Send</button>
+        </div>
+    </form>
+    
+    <style>
+        button {
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: 0px;
+            background: transparent;
+            position: relative;
+            margin: 20px;
+            transition: all 0.25s ease;
+        }
+    </style>
+    
+    <button onclick="goToContentPage()" class="btn-5">ย้อนกลับ</button>
+    <div class="wolrd-1">
+        <img src="img/world-internet 2.svg">
+    </div>
+    <div class="wolrd-2">
+        <img src="img/world-internet 2 - Copy.svg">
+        <a href=""></a>
+    </div>
+    <div class="social-1">
+        <img src="img/email-mails 1.svg">
+        <a href=""></a>
+    </div>
+    <div class="social-2">
+        <a href="https://www.facebook.com/profile.php?id=61551594621279"><img src="img/Facebook.svg"></a>
+    </div>
+    <script>
+        function goToContentPage() {
+            window.location.href = 'Content.html'; // แทน 'หน้าติดต่อ.html' ด้วย URL ของหน้าหลักของคุณ
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwlUuudm8Oafq6p7qWzmIcsk3mHwLE9jAGEqcK0cwq3v5iJpoRU-JDUlIdTJi59ZMII/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msh = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = ""
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },50)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>
+</body>
+</html>
